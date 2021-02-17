@@ -28,7 +28,7 @@ class EnumEntryNameCaseRule : Rule("enum-entry-name-case") {
                 emit(
                     node.startOffset,
                     ERROR_MESSAGE,
-                    false
+                    true
                 )
 
                 if (autoCorrect) correct(enumEntry, name)
@@ -39,7 +39,7 @@ class EnumEntryNameCaseRule : Rule("enum-entry-name-case") {
                 emit(
                     node.startOffset,
                     ERROR_MESSAGE,
-                    false
+                    true
                 )
 
                 if (autoCorrect) correct(enumEntry, name)
