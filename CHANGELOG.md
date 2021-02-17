@@ -1,5 +1,5 @@
 # Changelog
-All notable changes to this project will be documented in this file.  
+All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
@@ -21,14 +21,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Fix formatting with comments (`colon-spacing`) ([#1057](https://github.com/pinterest/ktlint/issues/1057))
 - Fix IndexOutOfBoundsException in `argument-list-wrapping-rule` formatting file with many corrections ([#1081](https://github.com/pinterest/ktlint/issues/1081))
 - Fix formatting in arguments (`multiline-if-else`) ([#1079](https://github.com/pinterest/ktlint/issues/1079))
+- Fix EnumEntryNameCaseRule incorrectly reporting that it cannot be auto-corrected
 
 ### Changed
 - Update Gradle shadow plugin to `6.1.0` version
 - Align with Kotlin plugin on how alias pattern is represented for imports layout rule ([#753](https://github.com/pinterest/ktlint/issues/753))
 - Align with Kotlin plugin on how subpackages are represented ([#753](https://github.com/pinterest/ktlint/issues/753))
-- Deprecated custom `kotlin_imports_layout` EditorConfig property. Please use `ij_kotlin_imports_layout` to ensure 
+- Deprecated custom `kotlin_imports_layout` EditorConfig property. Please use `ij_kotlin_imports_layout` to ensure
   that the Kotlin IDE plugin and ktlint use same imports layout ([#753](https://github.com/pinterest/ktlint/issues/753))
-- Deprecated `idea` and `ascii` shortcuts as the `ij_kotlin_imports_layout` property does not support those. 
+- Deprecated `idea` and `ascii` shortcuts as the `ij_kotlin_imports_layout` property does not support those.
   Please check README on how to achieve those with patterns ([#753](https://github.com/pinterest/ktlint/issues/753))
 - Update Gradle to `6.8.1` version
 
@@ -36,11 +37,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.40.0] - 2020-12-04
 
-Special thanks to [t-kameyama](https://github.com/t-kameyama) for the huge number of bugfixes in this release! 
+Special thanks to [t-kameyama](https://github.com/t-kameyama) for the huge number of bugfixes in this release!
 
 ### Added
 - Initial implementation IDE integration via '.editorconfig' based on rules default values ([#701](https://github.com/pinterest/ktlint/issues/701))
-- CLI subcommand `generateEditorConfig` to generate '.editorconfig' content for Kotlin files ([#701](https://github.com/pinterest/ktlint/issues/701)) 
+- CLI subcommand `generateEditorConfig` to generate '.editorconfig' content for Kotlin files ([#701](https://github.com/pinterest/ktlint/issues/701))
 - A new capability to generate baseline and run ktlint against it with `--baseline` cli option ([#707](https://github.com/pinterest/ktlint/pull/707))
 
 ### Fixed
